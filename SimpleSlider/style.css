@@ -1,0 +1,38 @@
+body {
+  /* Alinhar todo conteudo ao centro */
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+  width: 80%;
+
+  max-width: 600px;
+
+  height: 40vw;
+  max-height: 300px;
+
+  position: relative;
+}
+
+#slider img {
+  /*some a imagem */
+  opacity: 0;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /* nao deixa a  imagem distorcida **/
+  object-fit: cover;
+
+  /* animacao ao fazer opacity */
+  transition: opacity 800ms;
+}
+
+#slider img.selected {
+  /*faz aparecer a imagem */
+  opacity: 1;
+}

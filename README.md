@@ -6,3 +6,7 @@ Projetos Html, Css e Javascript Vanilha.
 
 ### Tabela Nutricionista - IMC
 <img src="./Nutricionista/example.gif" >
+
+
+### Slider simples
+<img src="./SimpleSlider/example.gif" >
