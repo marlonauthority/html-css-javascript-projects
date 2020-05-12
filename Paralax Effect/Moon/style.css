@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Mina', sans-serif;
+}
+body{
+  background-color: #0a2a43;
+  min-height: 1500px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  /* Deixa a tela no maximo da altura */
+  height: 100vh;
+  overflow: hidden;
+
+  /** Alinhar os elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  /* A propriedade mix-blend-mode descreve como um elemento de conteúdo deve ser mesclado com os elementos abaixo dele no background. */
+  mix-blend-mode: color;
+}
+
+section img {
+  /* Position Absolute junta todas as imagens, parecem uma só. */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Cover aqui não vai deixa a imagem distorcer */
+  object-fit: cover;
+
+  /* Pointer-events como none significa: O elemento nunca é o alvo de eventos do mouse; */
+  pointer-events: none;
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  /* A propriedade z-index especifica a ordem-z de um elemento e 
+  de seus herdeiros. Quando os elementos sobrepõem, 
+  a z-ordem determina qual elemento cobre o outro.
+  */
+  z-index: 1;
+}
+
+#road {
+  z-index: 2;
+}
+
+article{
+  color: #fff;
+  max-width: 80%;
+}
+article h3 {
+  font-size: 2em;
+}
+article p{
+  text-align: justify;
+  font-size: 0.8em;
+}

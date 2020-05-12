@@ -1,12 +1,2 @@
-Projetos Html, Css e Javascript Vanilha.
+Repositório para estudo de diversos tipos e/ou tecnicas de construção de layouts e efeitos.
 
-### Moon Paralax
-<img src="./Moon - Paralax/example.gif" >
-
-
-### Tabela Nutricionista - IMC
-<img src="./Nutricionista/example.gif" >
-
-
-### Slider simples
-<img src="./SimpleSlider/example.gif" >
