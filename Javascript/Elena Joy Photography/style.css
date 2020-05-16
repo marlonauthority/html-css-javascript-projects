@@ -32,6 +32,8 @@ html {
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
+
+  scroll-behavior: smooth;
 }
 
 h1 {

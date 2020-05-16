@@ -10,6 +10,7 @@
   .burger {
     position: relative;
     display: block;
+    cursor: pointer;
   }
 
   .burger span {
@@ -39,34 +40,25 @@
     transition: transform 1s ease;
   }
 
-  .menu-check {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-    
-  }
-  .menu-check:checked + .nav-links {
-    transform: translateX(-100%);
-  }
-  .menu-check:checked ~ .burger span {
+  
+  .nav-open {
+      transform: translateX(-100%);
+    }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
     background: #fff;
   }
-  .menu-check:checked ~ .burger span:nth-child(1) {
-    transform: rotateZ(45deg) translateY(300%);
+
+  .toggle .line2 {
+      opacity: 0;
   }
-  .menu-check:checked ~ .burger span:nth-child(2) {
-    opacity: 0;
-  }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+
+  .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
+    background: #fff;
   }
+
 
   .about-text div {
     padding: 3rem 3rem;
