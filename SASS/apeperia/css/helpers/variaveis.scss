@@ -1,0 +1,10 @@
+// Variaveis
+$cor-padrao: darken(#c24e4b, 20);
+$cor-auxiliar: lighten(#1e2c35, 10);
+$cor-branca: #fff;
+$raio: 0.3em;
+$radio-grande: 3.125em;
+
+
+// Exemplo de media query "geral.scss"
+$quebra-pra-mobile: "(max-width: 980px)";
